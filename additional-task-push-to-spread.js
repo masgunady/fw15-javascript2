@@ -8,15 +8,13 @@ const searchNum = (nilaiAwal, nilaiAkhir, dataArray) => {
         } else {
             for (let i = 0; i < dataArray.length; i++) {
                 if (dataArray[i] > nilaiAwal && dataArray[i] < nilaiAkhir) {
-                    dataSatuan = dataArray[i];
-                    hasil = hasil+dataSatuan
-                    
+                    hasil = hasil + dataArray[i]
                 }
             }
 
             // console.log(typeof hasil)
             hasil = [...hasil]
-            hasil = hasil.map(function(toInteger){
+            hasil = hasil.map(function (toInteger) {
                 return parseInt(toInteger)
             })
             // return
@@ -29,4 +27,4 @@ const searchNum = (nilaiAwal, nilaiAkhir, dataArray) => {
     }
 };
 
-searchNum(2, 10, [7, 4, 11, 9, 12]);
+searchNum(5, 10, [7, 4, 11, 9, 12]);
