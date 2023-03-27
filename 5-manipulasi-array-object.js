@@ -22,6 +22,7 @@ dataNew.email = 'gunadips@gmail.com';
 dataNew.hobby = ['run', 'swimming', 'football']
 
 console.log(dataNew);
+console.log(data)
 
 
 console.log("Get data street and city :");

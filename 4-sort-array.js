@@ -5,6 +5,7 @@ function seleksiNilai(nilaiAwal, nilaiAkhir, dataArray) {
         return;
     }
     if (dataArray.length <= 5) {
+        // jika menggunakan <= 5 dan length arraynya 5 masih true sehingga dijalankan console error dibawah
         console.log("Data array harus lebih dari 5");
         return;
     }
@@ -22,4 +23,4 @@ function seleksiNilai(nilaiAwal, nilaiAkhir, dataArray) {
     }
 }
 
-seleksiNilai(16, 18, [14, 17, 30, 8, 5, 12]);
+seleksiNilai(16, 18, [14, 17, 30, 8, 5]);
